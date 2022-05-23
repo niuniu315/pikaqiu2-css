@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>运行代码</title>
+</head>
+<body>
+<style id="demo2"></style>
+<div id="demo"></div>
+<div id="buttons">
+  <button id="pause">暂停</button>
+  <button id="play">播放</button>
+  <button id="slow">慢速</button>
+  <button id="fast">快速</button>
+</div>
+<style>
+  #buttons {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+  }
+  #buttons > button {
+    margin-bottom: 10px;
+    padding: 4px 8px;
+  }
+  #demo2 {
+    display: none;
+  }
+  #demo {
+    position: fixed;
+    height: 40vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+  }
+  #demo::-webkit-scrollbar {
+    display: none;
+  }
+  #html {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+  }
+</style>
+<div id="html">
+  <div class="skin">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="nose"></div>
+    <div class="mouth">
+      <div class="upperLip left"></div>
+      <div class="upperLip right"></div>
+    </div>
+    <div class="downLip">
+      <div class="lip1">
+        <div class="lip2"></div>
+      </div>
+    </div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+</div>
+<script src="run.js"></script>
+</body>
+</html>
